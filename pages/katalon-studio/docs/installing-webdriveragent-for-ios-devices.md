@@ -90,7 +90,7 @@ sh ./Scripts/bootstrap.sh -d
     ```groovy
     export DEVICE_URL='http://<device IP>:8100'
     export JSON_HEADER='-H "Content-Type: application/json;charset=UTF-8, accept:application/json"'
-    curl -X GET $JSON_HEADER $DEVICE_URL/status
+    curl -X GET "$JSON_HEADER" $DEVICE_URL/status
     ```
 
     ```groovy
